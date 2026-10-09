@@ -18,7 +18,7 @@
 - Google Fonts (Montserrat)
 
 ## Демо
-🔗 [https://harlanovichaleksey.github.io/Kharlanovich_Practical_4_Digital/](https://harlanovichaleksey.github.io/Kharlanovich_Practical_4_Digital/)
+🔗 [https://harlanovichaleksey.github.io/Kharlanovich_Practical2/](https://harlanovichaleksey.github.io/Kharlanovich_Practical2/)
 
 ## Файлы
 - `index.html` — разметка страницы;
