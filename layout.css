@@ -1,0 +1,54 @@
+/* ===== МАКЕТ ИЗ 5 БЛОКОВ ===== */
+
+.flex-layout {
+    display: flex;
+    gap: 16px;
+    max-width: 960px;
+    margin-bottom: 20px;
+}
+
+/* Левая колонка с 3 блоками */
+.col-left {
+    display: flex;
+    flex-direction: column;    /* блоки идут вертикально */
+    gap: 16px;
+    flex: 1;                   /* занимает 1 часть ширины */
+}
+
+/* Правая часть с 2 блоками */
+.col-right {
+    display: flex;
+    flex-direction: row;       /* блоки идут горизонтально */
+    gap: 16px;
+    flex: 2;                   /* занимает 2 части ширины */
+}
+
+/* Общий стиль всех блоков */
+.box {
+    background: #0d5c5c;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 18px;
+    border-radius: 2px;
+    display: flex;
+    align-items: flex-start;   /* текст в левом верхнем углу */
+}
+
+/* Блоки 1, 2, 3 — фиксированная высота */
+.box-1,
+.box-2,
+.box-3 {
+    height: 60px;
+}
+
+/* Блоки 4 и 5 — растягиваются по высоте родителя */
+.col-right .box {
+    flex: 1;                   /* каждый занимает половину ширины col-right */
+    height: 100%;              /* растягиваются на всю высоту */
+}
+
+/* Обёртка правой части задаёт высоту */
+.col-right {
+    height: 212px;
+}

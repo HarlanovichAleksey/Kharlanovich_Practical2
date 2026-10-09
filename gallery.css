@@ -1,0 +1,81 @@
+/* ===== ГАЛЕРЕЯ ИЗОБРАЖЕНИЙ ===== */
+
+/* Контейнер галереи — тоже флекс-контейнер */
+.gallery {
+    display: flex;
+    gap: 16px;
+    max-width: 960px;
+    padding: 30px;
+    background: #e9eaee;       /* светлый фон */
+    border-radius: 8px;
+}
+
+/* Колонки галереи */
+.gallery-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Левая колонка с 3 маленькими картинками */
+.gallery-col--small {
+    flex: 1;                    /* узкая колонка */
+    justify-content: space-between;
+}
+
+/* Средняя и правая колонки с большими картинками */
+.gallery-col--medium {
+    flex: 2;                    /* широкая колонка */
+}
+
+/* Карточка изображения */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+/* Эффект при наведении */
+.gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+}
+
+/* Картинка внутри карточки */
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* картинка заполняет блок без искажений */
+}
+
+/* Подпись поверх картинки */
+.gallery-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-top: 13px;
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.25);   /* полупрозрачная плашка */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Размеры маленьких карточек */
+.gallery-item--small {
+    height: 100px;
+}
+
+/* Размеры больших карточек */
+.gallery-item--medium {
+    height: 348px;
+}

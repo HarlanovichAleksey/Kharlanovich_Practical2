@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №2 · Flex-модель</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <!-- ===== ЧАСТЬ 1: Макет из 5 блоков ===== -->
+    <h2 class="task-title">2. Макет из 5 блоков (Flex-модель)</h2>
+
+    <div class="flex-layout">
+        <!-- Левая колонка: 3 блока вертикально -->
+        <div class="col-left">
+            <div class="box box-1">1</div>
+            <div class="box box-2">2</div>
+            <div class="box box-3">3</div>
+        </div>
+
+        <!-- Правая часть: 2 блока горизонтально -->
+        <div class="col-right">
+            <div class="box box-4">4</div>
+            <div class="box box-5">5</div>
+        </div>
+    </div>
+
+
+    <!-- ===== ЧАСТЬ 2: Галерея ===== -->
+    <h2 class="task-title">3. Галерея изображений (Flex-модель)</h2>
+
+    <div class="gallery">
+        <!-- Левая колонка: 3 маленьких изображения -->
+        <div class="gallery-col gallery-col--small">
+            <div class="gallery-item gallery-item--small">
+                <span class="gallery-caption">Рисунок 1</span>
+                <img src="img/peschannye_dyni.webp" alt="Рисунок 1">
+            </div>
+            <div class="gallery-item gallery-item--small">
+                <span class="gallery-caption">Рисунок 2</span>
+                <img src="img/zakat_v_gorah.jpg" alt="Рисунок 2">
+            </div>
+            <div class="gallery-item gallery-item--small">
+                <span class="gallery-caption">Рисунок 3</span>
+                <img src="img/osenniy_les_gori.webp" alt="Рисунок 3">
+            </div>
+        </div>
+
+        <!-- Средняя колонка: 1 большое изображение -->
+        <div class="gallery-col gallery-col--medium">
+            <div class="gallery-item gallery-item--medium">
+                <span class="gallery-caption">Рисунок 4</span>
+                <img src="img/skallistye_gori.jpg" alt="Рисунок 4">
+            </div>
+        </div>
+
+        <!-- Правая колонка: 1 большое изображение -->
+        <div class="gallery-col gallery-col--medium">
+            <div class="gallery-item gallery-item--medium">
+                <span class="gallery-caption">Рисунок 5</span>
+                <img src="img/gornoe_ozero.jpg" alt="Рисунок 5">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
